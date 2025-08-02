@@ -1,0 +1,229 @@
+:root {
+  --color-primary: #0c3b66;
+  --color-secondary: #155a8a;
+  --color-light: #f8f7f4;
+  --color-text: #222;
+  --color-accent: #e6b800;
+
+  --font-main: "Segoe UI", sans-serif;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-light);
+  color: var(--color-text);
+  line-height: 1.7;
+  padding-top: 80px; /* pentru navbar fix */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: var(--color-light);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo1 img {
+  height: 100px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.menu a:hover {
+  color: var(--color-secondary);
+}
+
+/* Secțiune Hero */
+.hero {
+  background-color: #fff;
+  padding: 64px 32px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: var(--color-primary);
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.hero a {
+  display: inline-block;
+  margin: 16px 8px 0;
+  padding: 12px 24px;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.hero a:hover {
+  background-color: #cfa400;
+}
+
+/* Secțiune Despre */
+.cine_sunt {
+  padding: 64px 32px;
+  max-width: 1400px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.cine_sunt img {
+  max-width: 480px;
+  float: left;
+  margin-right: 32px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+}
+
+.cine_sunt h2 {
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.cine_sunt ul {
+  margin-top: 16px;
+  padding-left: 20px;
+}
+
+/* Secțiune Servicii */
+.servicii {
+  padding: 64px 32px;
+  background-color: var(--color-light);
+}
+
+.servicii h2 {
+  text-align: center;
+  font-size: 32px;
+  color: var(--color-primary);
+  margin-bottom: 32px;
+}
+
+.serviciu {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 32px;
+  margin-bottom: 48px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s;
+}
+
+.serviciu:hover {
+  transform: scale(1.01);
+}
+
+.text-serviciu {
+  flex: 1;
+}
+
+.imagini-serviciu {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  max-width: 480px;
+}
+
+.serviciu img {
+  max-width: 480px;
+  width: 480%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 32px;
+  text-align: center;
+}
+
+.footer-contact {
+  margin-bottom: 16px;
+}
+
+.footer-btn {
+  display: inline-block;
+  margin: 8px 12px;
+  padding: 12px 24px;
+  background-color: var(--color-accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.footer-btn:hover {
+  background-color: #cfa400;
+}
+
+footer .copyright {
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .serviciu {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .cine_sunt img {
+    float: none;
+    display: block;
+    margin: 0 auto 24px;
+  }
+}
