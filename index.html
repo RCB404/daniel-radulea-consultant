@@ -2,29 +2,97 @@
 <html lang="ro">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <!-- ===== SEO: Title & Description ===== -->
     <title>
-      Radulea Daniel - Consultant Financiar NN | Protecție și Planificare
+      Consultant Financiar NN în Timișoara (și online) | Radulea Daniel
     </title>
     <meta
       name="description"
-      content="Consultant financiar NN oferind soluții personalizate de asigurări, pensii și protecție financiară pentru familie și afaceri."
+      content="Soluții clare de asigurări de viață și sănătate, pensii private (Pilon III) și planuri pentru copii. Consultanță NN în Timișoara și online. Discuție fără presiune."
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="logo1.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="logo1.jpg" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.raduleadaniel.ro/" />
+
+    <!-- Robots (opțional, default e index/follow) -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Theming -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- ===== Open Graph / Twitter ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.raduleadaniel.ro/" />
+    <meta
+      property="og:title"
+      content="Consultant Financiar NN în Timișoara (și online) | Radulea Daniel"
+    />
+    <meta
+      property="og:description"
+      content="Asigurări de viață și sănătate, pensii private (Pilon III) și planuri pentru copii. Consultanță NN în Timișoara și online."
+    />
+    <meta
+      property="og:image"
+      content="https://www.raduleadaniel.ro/logo1.png"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Consultant Financiar NN în Timișoara (și online) | Radulea Daniel"
+    />
+    <meta
+      name="twitter:description"
+      content="Soluții clare de asigurări, pensii private și protecție financiară. Consultanță NN în Timișoara și online."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.raduleadaniel.ro/logo1.png"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css?v=1.0.3" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap");
     </style>
+
+    <!-- ===== JSON-LD: Person/LocalBusiness (SEO local) ===== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Radulea Daniel - Consultant Financiar NN",
+        "image": "https://www.raduleadaniel.ro/logo1.png",
+        "url": "https://www.raduleadaniel.ro/",
+        "telephone": "+40752164734",
+        "email": "lazar-daniel.radulea@nnconsultant.ro",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Timișoara",
+          "addressCountry": "RO"
+        },
+        "areaServed": "România",
+        "sameAs": []
+      }
+    </script>
   </head>
   <body>
-    <!-- Header & Navigation (FĂRĂ LOGO) -->
+    <!-- Header & Navigation (FĂRĂ LOGO; fară butoane sus) -->
     <header class="header">
       <nav class="navbar container">
-        <div
+        <button
           class="menu-toggle"
           id="mobile-menu"
           aria-label="Deschide meniul"
@@ -32,19 +100,17 @@
           aria-controls="primary-nav"
         >
           <span></span><span></span><span></span>
-        </div>
+        </button>
         <ul class="nav-menu" id="primary-nav">
           <li><a href="#Acasa" class="nav-link">Acasă</a></li>
           <li><a href="#Despre" class="nav-link">Despre</a></li>
           <li><a href="#Servicii" class="nav-link">Servicii</a></li>
-          <li>
-            <a href="#contact" class="nav-link btn btn-outline">Contact</a>
-          </li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero (fără butoane) -->
     <section class="hero" id="Acasa">
       <div class="hero-content container">
         <h1>Radulea Daniel</h1>
@@ -58,29 +124,16 @@
           <strong>scut financiar</strong> solid, elegant și discret, care să-i
           protejeze pe termen lung.
         </p>
-        <div class="hero-cta">
-          <a href="tel:+40752164734" class="btn btn-primary">
-            <i class="fas fa-phone-alt"></i> Sună acum
-          </a>
-          <a
-            href="https://wa.me/40752164734"
-            class="btn btn-whatsapp"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="fab fa-whatsapp"></i> WhatsApp
-          </a>
-        </div>
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Despre -->
     <section class="about-section" id="Despre">
       <div class="container about-grid">
         <div class="about-image">
           <img
             src="dani.jpeg"
-            alt="Radulea Daniel Consultant Financiar"
+            alt="Radulea Daniel – Consultant financiar NN în Timișoara (consultanță și online)"
             width="500"
             height="600"
             loading="lazy"
@@ -103,19 +156,19 @@
           </p>
           <div class="features">
             <div class="feature-item">
-              <i class="fas fa-shield-alt"></i>
+              <i class="fas fa-shield-alt" aria-hidden="true"></i>
               <p>Asigurări de viață și sănătate</p>
             </div>
             <div class="feature-item">
-              <i class="fas fa-piggy-bank"></i>
+              <i class="fas fa-piggy-bank" aria-hidden="true"></i>
               <p>Planuri de economisire și pensii private</p>
             </div>
             <div class="feature-item">
-              <i class="fas fa-heartbeat"></i>
+              <i class="fas fa-heartbeat" aria-hidden="true"></i>
               <p>Protecție financiară în caz de boli grave</p>
             </div>
             <div class="feature-item">
-              <i class="fas fa-child"></i>
+              <i class="fas fa-child" aria-hidden="true"></i>
               <p>Planuri pentru copii</p>
             </div>
           </div>
@@ -129,7 +182,7 @@
       </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Servicii -->
     <section class="services-section" id="Servicii">
       <div class="container">
         <div class="section-header">
@@ -143,9 +196,10 @@
         </div>
 
         <div class="services-grid">
-          <!-- Service 1 -->
           <div class="service-card">
-            <div class="service-icon"><i class="fas fa-user-shield"></i></div>
+            <div class="service-icon">
+              <i class="fas fa-user-shield" aria-hidden="true"></i>
+            </div>
             <h3>Asigurări de viață</h3>
             <p>
               Nimeni nu vrea să se gândească la ce e mai rău. Dar tocmai de
@@ -162,9 +216,10 @@
             </p>
           </div>
 
-          <!-- Service 2 -->
-          <div class="service-card">
-            <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+          <div class="service-card" id="asigurari_sanatate">
+            <div class="service-icon">
+              <i class="fas fa-heartbeat" aria-hidden="true"></i>
+            </div>
             <h3>Asigurările de sănătate</h3>
             <p>
               Sănătatea ta nu ar trebui să stea niciodată în funcție de un
@@ -179,9 +234,10 @@
             </p>
           </div>
 
-          <!-- Service 3 -->
-          <div class="service-card">
-            <div class="service-icon"><i class="fas fa-home"></i></div>
+          <div class="service-card" id="_asigurare_locuinta">
+            <div class="service-icon">
+              <i class="fas fa-home" aria-hidden="true"></i>
+            </div>
             <h3>Asigurare de locuință</h3>
             <p>
               Casa ta nu e doar o clădire. E locul unde dormi liniștit, unde
@@ -192,9 +248,10 @@
             </p>
           </div>
 
-          <!-- Service 4 -->
-          <div class="service-card">
-            <div class="service-icon"><i class="fas fa-piggy-bank"></i></div>
+          <div class="service-card" id="pensii_facultative">
+            <div class="service-icon">
+              <i class="fas fa-piggy-bank" aria-hidden="true"></i>
+            </div>
             <h3>Pensii facultative – Pilon III</h3>
             <p>
               Poate nu pare o urgență acum. Dar vine o zi în care n-o să mai ai
@@ -205,10 +262,9 @@
             </p>
           </div>
 
-          <!-- Service 5 -->
-          <div class="service-card">
+          <div class="service-card" id="economisire_copii">
             <div class="service-icon">
-              <i class="fas fa-graduation-cap"></i>
+              <i class="fas fa-graduation-cap" aria-hidden="true"></i>
             </div>
             <h3>Economisire pentru copii</h3>
             <p>
@@ -220,9 +276,10 @@
             </p>
           </div>
 
-          <!-- Service 6 -->
-          <div class="service-card">
-            <div class="service-icon"><i class="fas fa-notes-medical"></i></div>
+          <div class="service-card" id="asigurare_boli_grave">
+            <div class="service-icon">
+              <i class="fas fa-notes-medical" aria-hidden="true"></i>
+            </div>
             <h3>Asigurare pentru boli grave</h3>
             <p>
               Când vine o veste proastă, totul se oprește. Timpul, siguranța,
@@ -242,12 +299,11 @@
               sunt aici. Fără presiune. Cu răbdare. Cu respect.</em
             >
           </p>
-          <!-- Butonul „Programează consult” a fost eliminat la cerere -->
+          <!-- fără buton „Programează consult” -->
         </div>
       </div>
     </section>
 
-    <!-- Contact Section (Formspree integrat) -->
     <section class="contact-section" id="contact">
       <div class="container">
         <h2>Hai să vorbim!</h2>
@@ -256,17 +312,14 @@
         </p>
 
         <div class="contact-grid">
-          <!-- FORMULAR FORMSPREE -->
           <div class="contact-form">
-            <!-- Pune aici endpoint-ul tău: înlocuiește FORM_ID -->
             <form
               id="contact-form"
-              action="https://formspree.io/f/FORM_ID"
+              action="https://formspree.io/f/meozdjbn"
               method="POST"
               autocomplete="on"
               novalidate
             >
-              <!-- câmpuri necesare -->
               <div class="form-group">
                 <label for="name" class="sr-only">Nume</label>
                 <input
@@ -277,7 +330,6 @@
                   required
                 />
               </div>
-
               <div class="form-group">
                 <label for="email" class="sr-only">Email</label>
                 <input
@@ -288,7 +340,6 @@
                   required
                 />
               </div>
-
               <div class="form-group">
                 <label for="phone" class="sr-only">Telefon</label>
                 <input
@@ -298,7 +349,6 @@
                   placeholder="Telefon"
                 />
               </div>
-
               <div class="form-group">
                 <label for="message" class="sr-only">Mesaj</label>
                 <textarea
@@ -316,25 +366,6 @@
                 name="_subject"
                 value="Mesaj nou de pe site – Radulea Daniel"
               />
-
-              <!-- GDPR / consimțământ (poți edita textul) -->
-              <div
-                class="form-group"
-                style="display: flex; gap: 0.5rem; align-items: flex-start"
-              >
-                <input
-                  type="checkbox"
-                  id="consent"
-                  name="consent"
-                  required
-                  style="margin-top: 0.35rem"
-                />
-                <label for="consent"
-                  >Sunt de acord ca datele mele să fie folosite pentru a fi
-                  contactat în legătură cu solicitarea mea.</label
-                >
-              </div>
-
               <!-- Honeypot anti-bot -->
               <input
                 type="text"
@@ -342,13 +373,13 @@
                 style="display: none"
                 tabindex="-1"
                 autocomplete="off"
+                aria-label="Lăsați necompletat (anti-bot)"
               />
 
               <button type="submit" class="btn btn-primary" id="send-btn">
                 <i class="fas fa-paper-plane" aria-hidden="true"></i> Trimite
                 mesaj
               </button>
-
               <p
                 id="form-status"
                 class="form-status"
@@ -358,18 +389,20 @@
             </form>
           </div>
 
-          <!-- INFO DE CONTACT (nemodificat) -->
           <div class="contact-info">
             <div class="contact-method">
-              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+              </div>
               <div class="contact-details">
                 <h4>Telefon</h4>
                 <a href="tel:+40752164734">0752 164 734</a>
               </div>
             </div>
-
             <div class="contact-method">
-              <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+              <div class="contact-icon">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+              </div>
               <div class="contact-details">
                 <h4>WhatsApp</h4>
                 <a
@@ -380,9 +413,10 @@
                 >
               </div>
             </div>
-
             <div class="contact-method">
-              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-icon">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+              </div>
               <div class="contact-details">
                 <h4>Email</h4>
                 <a href="mailto:lazar-daniel.radulea@nnconsultant.ro"
@@ -390,10 +424,9 @@
                 >
               </div>
             </div>
-
             <div class="contact-method">
               <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
               </div>
               <div class="contact-details">
                 <h4>Locație</h4>
@@ -412,9 +445,10 @@
           <div class="footer-about">
             <img
               src="logo1.png"
-              alt="Radulea Daniel Consultant Financiar"
+              alt="Logo Radulea Daniel – Consultant Financiar NN"
               width="150"
               height="50"
+              loading="lazy"
             />
             <p>
               Soluții financiare personalizate pentru protecția familiei și
@@ -445,7 +479,7 @@
           <div class="footer-contact">
             <h4>Contact rapid</h4>
             <a href="tel:+40752164734" class="btn btn-outline">
-              <i class="fas fa-phone-alt"></i> Sună acum
+              <i class="fas fa-phone-alt" aria-hidden="true"></i> Sună acum
             </a>
             <div class="social-links">
               <a
@@ -453,15 +487,13 @@
                 target="_blank"
                 aria-label="WhatsApp"
                 rel="noopener"
-              >
-                <i class="fab fa-whatsapp"></i>
-              </a>
+                ><i class="fab fa-whatsapp" aria-hidden="true"></i
+              ></a>
               <a
                 href="mailto:lazar-daniel.radulea@nnconsultant.ro"
                 aria-label="Email"
-              >
-                <i class="fas fa-envelope"></i>
-              </a>
+                ><i class="fas fa-envelope" aria-hidden="true"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -478,90 +510,135 @@
 
     <!-- Floating CTA (Mobile) -->
     <div class="floating-cta" aria-hidden="true">
-      <a href="tel:+40752164734" class="floating-btn" title="Sună acum">
-        <i class="fas fa-phone-alt"></i>
-      </a>
+      <a href="tel:+40752164734" class="floating-btn" title="Sună acum"
+        ><i class="fas fa-phone-alt" aria-hidden="true"></i
+      ></a>
       <a
         href="https://wa.me/40752164734"
         class="floating-btn"
         target="_blank"
         rel="noopener"
         title="WhatsApp"
-      >
-        <i class="fab fa-whatsapp"></i>
-      </a>
+        ><i class="fab fa-whatsapp" aria-hidden="true"></i
+      ></a>
     </div>
 
+    <!-- Scripts -->
     <script>
-            // Year in footer
-            document.getElementById('year').textContent = new Date().getFullYear();
+      // Year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
 
-            // Mobile menu toggle
-            const menuToggle = document.getElementById('mobile-menu');
-            const navMenu = document.querySelector('.nav-menu');
-            menuToggle.addEventListener('click', () => {
-                const isOpen = navMenu.classList.toggle('active');
-                menuToggle.classList.toggle('active', isOpen);
-                menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-                document.body.style.overflow = isOpen ? 'hidden' : '';
-            });
-            // Smooth scroll + close menu on click
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetElement = document.querySelector(this.getAttribute('href'));
-                    if (targetElement) {
-                        window.scrollTo({ top: targetElement.offsetTop - 100, behavior: 'smooth' });
-                    }
-                    navMenu.classList.remove('active');
-                    menuToggle.classList.remove('active');
-                    menuToggle.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
-                });
-            });
-
-            <script>
+      // Toggle meniu + body scroll lock (iOS safe) + smooth anchors
       (function () {
-        const form = document.getElementById('contact-form');
-        const statusEl = document.getElementById('form-status');
-        const sendBtn = document.getElementById('send-btn'); // id pe butonul "Trimite mesaj"
+        const menuToggle = document.getElementById("mobile-menu");
+        const navMenu = document.querySelector(".nav-menu");
+        let scrollY = 0;
 
+        function openMenu() {
+          scrollY = window.scrollY || window.pageYOffset;
+          navMenu.classList.add("active");
+          menuToggle.classList.add("active");
+          menuToggle.setAttribute("aria-expanded", "true");
+
+          document.body.style.position = "fixed";
+          document.body.style.top = `-${scrollY}px`;
+          document.body.style.left = "0";
+          document.body.style.right = "0";
+          document.body.style.width = "100%";
+        }
+        function closeMenu() {
+          navMenu.classList.remove("active");
+          menuToggle.classList.remove("active");
+          menuToggle.setAttribute("aria-expanded", "false");
+
+          document.body.style.position = "";
+          document.body.style.top = "";
+          document.body.style.left = "";
+          document.body.style.right = "";
+          document.body.style.width = "";
+          window.scrollTo(0, scrollY);
+        }
+
+        if (menuToggle && navMenu) {
+          menuToggle.addEventListener("click", () => {
+            const isOpen = navMenu.classList.contains("active");
+            isOpen ? closeMenu() : openMenu();
+          });
+
+          // închide meniul la click pe ancore + scroll cu offset
+          document.querySelectorAll('a[href^="#"]').forEach((a) => {
+            a.addEventListener("click", (e) => {
+              const target = document.querySelector(a.getAttribute("href"));
+              if (target) {
+                e.preventDefault();
+                closeMenu();
+                setTimeout(() => {
+                  const headerH =
+                    parseInt(
+                      getComputedStyle(
+                        document.documentElement
+                      ).getPropertyValue("--header-height")
+                    ) || 80;
+                  window.scrollTo({
+                    top: target.offsetTop - headerH - 10,
+                    behavior: "smooth",
+                  });
+                }, 0);
+              }
+            });
+          });
+        }
+      })();
+
+      // Formspree AJAX (fallback: dacă nu ai pus încă FORM_ID, lasă submit normal)
+      (function () {
+        const form = document.getElementById("contact-form");
         if (!form) return;
+        const statusEl = document.getElementById("form-status");
+        const sendBtn = document.getElementById("send-btn");
 
-        form.addEventListener('submit', async (e) => {
-          const endpoint = form.getAttribute('action');
-          // dacă nu ai setat încă FORM_ID, lasă submit-ul normal (fallback Formspree)
-          if (!endpoint || endpoint.includes('FORM_ID')) return;
+        form.addEventListener("submit", async (e) => {
+          const endpoint = form.getAttribute("action");
+          // dacă nu ai setat endpointul corect, lasă submitul nativ Formspree (redirect)
+          if (!endpoint || endpoint.includes("{FORM_ID}")) return;
 
           e.preventDefault();
-          statusEl.textContent = 'Se trimite…';
-          if (sendBtn) sendBtn.disabled = true;
+          statusEl.textContent = "Se trimite…";
+          sendBtn.disabled = true;
 
           try {
+            // (opțional) atașează și URL-ul paginii, dacă ai un input hidden name="page"
+            const pageHidden = form.querySelector('input[name="page"]');
+            if (pageHidden) pageHidden.value = location.href;
+
             const data = new FormData(form);
             const resp = await fetch(endpoint, {
-              method: 'POST',
+              method: "POST",
               body: data,
-              headers: { 'Accept': 'application/json' }
+              headers: { Accept: "application/json" },
             });
 
             if (resp.ok) {
               form.reset();
-              statusEl.textContent = 'Mulțumesc! Mesajul a fost trimis.';
+              statusEl.textContent = "Mulțumesc! Mesajul a fost trimis.";
+
+              // (opțional) șterge mesajul după 6 secunde
+              setTimeout(() => {
+                statusEl.textContent = "";
+              }, 6000);
             } else {
-              let msg = 'Ups! Te rog încearcă din nou.';
+              let msg = "Ups! Te rog încearcă din nou.";
               try {
                 const out = await resp.json();
-                if (out?.errors?.length) {
-                  msg = out.errors.map(e => e.message).join(', ');
-                }
+                if (out?.errors?.length)
+                  msg = out.errors.map((e) => e.message).join(", ");
               } catch {}
               statusEl.textContent = msg;
             }
           } catch {
-            statusEl.textContent = 'Eroare de rețea. Încearcă mai târziu.';
+            statusEl.textContent = "Eroare de rețea. Încearcă mai târziu.";
           } finally {
-            if (sendBtn) sendBtn.disabled = false;
+            sendBtn.disabled = false;
           }
         });
       })();

@@ -1,0 +1,12 @@
+# Permite indexarea site-ului
+User-agent: *
+Allow: /
+
+# Blochează fișierele sursă inutile SEO (dacă există)
+Disallow: /README
+Disallow: /readme
+Disallow: /LICENSE
+Disallow: /license
+
+# Sitemap declarat pentru crawlere
+Sitemap: https://www.raduleadaniel.ro/sitemap.xml
