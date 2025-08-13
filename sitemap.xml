@@ -1,30 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Pagina principală (one‑page) -->
   <url>
-    <loc>https://www.raduleadaniel.ro/</loc>
-    <lastmod>2025-08-13</lastmod>
+    <loc>https://raduleadaniel.ro/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-
-  <!-- Ancore utile pentru Google (nu sunt obligatorii, dar ajută la “sitelinks”) -->
-  <url>
-    <loc>https://www.raduleadaniel.ro/#Despre</loc>
-    <lastmod>2025-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.raduleadaniel.ro/#Servicii</loc>
-    <lastmod>2025-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.raduleadaniel.ro/#contact</loc>
-    <lastmod>2025-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>
