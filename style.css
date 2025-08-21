@@ -5,8 +5,8 @@
   --color-secondary: #155a8a;
 
   /* ACCENT – verde prietenos */
-  --color-accent: #4caf50;
-  --color-accent-dark: #43a047;
+  --color-accent: #2e7d32;
+  --color-accent-dark: #1b5e20;
 
   --color-light: #f8f7f4;
   --color-white: #ffffff;
@@ -119,24 +119,28 @@ ol {
   text-align: center;
   cursor: pointer;
   transition: var(--transition-normal);
-  border: 2px solid transparent;
+  border: 2px solid;
 }
-.btn-primary {
+primary {
   background-color: var(--color-accent);
-  color: var(--color-white);
+  color: #fff;
+  font-weight: 700;
 }
 .btn-primary:hover {
-  background-color: var(--color-accent-dark);
+  background: #1da851;
+  background-color: #;
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
 }
 .btn-outline {
-  background: transparent;
-  border-color: var(--color-white);
-  color: var(--color-white);
+  background: 25d366;
+  color: #fff;
+  border: 2px solid;
 }
 .btn-outline:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #1da851;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
 }
 .btn-whatsapp {
   background: #25d366;
@@ -424,8 +428,9 @@ button[disabled] {
   color: var(--color-primary);
   font-size: 1.25rem;
 }
-.contact-details h4 {
+.contact-details h3 {
   margin-bottom: var(--spacing-xs);
+  font-size: 1.25rem;
 }
 .contact-details a {
   color: var(--color-primary);

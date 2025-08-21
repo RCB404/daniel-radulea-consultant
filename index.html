@@ -17,7 +17,7 @@
     />
 
     <!-- Favicon -->
-    <link rel="icon" href="logo1.jpg" />
+    <link rel="icon" href="logo1.webp" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://www.raduleadaniel.ro/" />
@@ -41,7 +41,7 @@
     />
     <meta
       property="og:image"
-      content="https://www.raduleadaniel.ro/logo1.jpg"
+      content="https://www.raduleadaniel.ro/logo1.webp"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -55,7 +55,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://www.raduleadaniel.ro/logo1.jpg"
+      content="https://www.raduleadaniel.ro/logo1.webp"
     />
 
     <!-- Styles -->
@@ -67,6 +67,16 @@
       href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Preload imagini importante (logo + poza despre) -->
+    <link rel="preload" as="image" href="logo1.webp" type="image/webp" />
+    <link rel="preload" as="image" href="dani.webp" type="image/webp" />
+
+    <!-- Preload stylesheet -->
+    <link rel="preload" as="style" href="style.css?v=1.0.3" />
+
+    <!-- Preconnect la Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- ===== JSON-LD: Person/LocalBusiness (SEO local) ===== -->
     <script type="application/ld+json">
@@ -74,7 +84,7 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Radulea Daniel - Consultant Financiar NN",
-        "image": "https://www.raduleadaniel.ro/logo1.jpg",
+        "image": "https://www.raduleadaniel.ro/logo1.webp",
         "url": "https://www.raduleadaniel.ro/",
         "telephone": "+40752164734",
         "email": "lazar-daniel.radulea@nnconsultant.ro",
@@ -88,18 +98,24 @@
       }
     </script>
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-W7RCB2CNGQ"
-    ></script>
+    <!-- Google Analytics (lazy load după 3 secunde) -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+      setTimeout(function () {
+        var gtagScript = document.createElement("script");
+        gtagScript.src =
+          "https://www.googletagmanager.com/gtag/js?id=G-W7RCB2CNGQ";
+        gtagScript.async = true;
+        document.head.appendChild(gtagScript);
 
-      gtag("config", "G-W7RCB2CNGQ");
+        gtagScript.onload = function () {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+          gtag("config", "G-W7RCB2CNGQ");
+        };
+      }, 3000); // delay 3 secunde
     </script>
   </head>
   <body>
@@ -519,7 +535,7 @@
                 </svg>
               </div>
               <div class="contact-details">
-                <h4>Telefon</h4>
+                <h3>Telefon</h3>
                 <a href="tel:+40752164734">0752 164 734</a>
               </div>
             </div>
@@ -595,7 +611,7 @@
         <div class="footer-grid">
           <div class="footer-about">
             <img
-              src="logo1.jpg"
+              src="logo1.webp"
               alt="Logo Radulea Daniel – Consultant Financiar NN, Timișoara si online"
               width="150"
               height="50"
