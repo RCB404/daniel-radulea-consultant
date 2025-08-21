@@ -15,7 +15,9 @@
   --color-border: #e0e0e0;
 
   /* Fonturi */
-  --font-main: "Segoe UI", system-ui, sans-serif;
+  :root {
+    --font-main: "Inter", "Segoe UI", system-ui, sans-serif;
+  }
 
   /* Spațiere */
   --spacing-xs: 0.5rem;
@@ -652,4 +654,14 @@ svg.icon {
 .social-links svg.icon {
   width: 1.25rem;
   height: 1.25rem;
+}
+.footer-bottom p:last-child {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-bottom a {
+  color: var(--color-accent);
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
 }
