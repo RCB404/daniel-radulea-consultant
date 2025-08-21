@@ -664,4 +664,10 @@ svg.icon {
 }
 .footer-bottom a:hover {
   text-decoration: underline;
+ 
 }
+.footer-bottom p:last-child {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
