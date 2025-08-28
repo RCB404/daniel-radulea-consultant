@@ -7,6 +7,7 @@ Disallow: /README
 Disallow: /readme
 Disallow: /LICENSE
 Disallow: /license
+Disallow: /index.html
 
 # Locația sitemap-ului
 Sitemap: https://raduleadaniel.ro/sitemap.xml
